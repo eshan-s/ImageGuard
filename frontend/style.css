@@ -1,0 +1,142 @@
+/* General Page Styling */
+body {
+    font-family: 'Lato', sans-serif; 
+    background-color: #f0f4f8; 
+    margin: 0;
+    padding: 20px;
+    color: #333; 
+}
+
+/* Container Styling */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 40px; 
+    border-radius: 12px; 
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15); 
+    text-align: center;
+}
+
+/* Title Styling */
+h1 {
+    color: #00796b; 
+    font-size: 2.8em; 
+    margin-bottom: 30px; 
+    font-family: 'Montserrat', sans-serif; 
+    letter-spacing: 1px; 
+
+/* Disclaimer Styling */
+p.disclaimer {
+    color: #e53935; 
+    font-weight: bold;
+    font-size: 1.3em; 
+    margin-bottom: 25px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px; 
+
+input[type="file"] {
+    margin: 15px 0;
+    border: 2px solid #0288d1;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1.1em; 
+    width: 75%;
+    font-family: 'Lato', sans-serif;
+    transition: border 0.3s;
+}
+
+input[type="file"]:focus {
+    border-color: #00796b; 
+}
+
+/* Button Styling */
+button {
+    padding: 12px 25px;
+    background-color: #0288d1;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+}
+
+button:hover {
+    background-color: #0277bd; 
+    transform: scale(1.05);
+}
+
+/* Result Section Styling */
+.result {
+    margin-top: 25px;
+    border-top: 2px solid #00796b;
+    padding-top: 25px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Metadata Section Styling */
+.metadata {
+    margin-top: 15px;
+    background: #e0f7fa; 
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #00796b;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.metadata h2 {
+    color: #004d40;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.metadata ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.metadata li {
+    margin-bottom: 10px;
+    font-size: 1.2em; 
+    color: #333;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Metadata Information Section */
+.metadata-info {
+    margin-top: 20px;
+    background: #e3f2fd; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.metadata-info h2 {
+    color: #1565c0;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.metadata-info p {
+    font-size: 1.1em; 
+    line-height: 1.5; 
+    color: #333;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+}
