@@ -2,12 +2,16 @@ document.getElementById('uploadForm').addEventListener('submit', async function 
     event.preventDefault(); // Prevent default form submission
 
     const formData = new FormData(this);
+    console.log('Form data ready to be sent:', formData); 
+
     try {
         const response = await fetch('http://localhost:3001/upload', {
             method: 'POST',
             body: formData,
         });
+
         const result = await response.json();
+        console.log('Response from server:', result); 
 
         if (response.ok) {
             displayResult(result);
@@ -16,19 +20,18 @@ document.getElementById('uploadForm').addEventListener('submit', async function 
         }
     } catch (error) {
         alert('Error uploading image: ' + error.message);
+        console.error('Error details:', error); 
     }
 });
 
 function formatDate(timestamp) {
     if (!timestamp) return 'Information Unavailable';
     const date = new Date(timestamp * 1000); // Convert from seconds to milliseconds
-    const formattedDate = date.toISOString().replace('T', ' ').split('.')[0]; // Format as 'YYYY-MM-DD HH:mm:ss'
-    return formattedDate;
+    return date.toISOString().replace('T', ' ').split('.')[0]; // Format as 'YYYY-MM-DD HH:mm:ss'
 }
 
 function displayResult(result) {
     const resultDiv = document.getElementById('result');
-
     // Parse the metadata
     const metadata = result.metadata || {};
     const tags = metadata.tags ? JSON.parse(metadata.tags) : {};
@@ -38,7 +41,7 @@ function displayResult(result) {
     const cameraModel = tags.Model || "Information Unavailable";
     const dateTime = tags.DateTimeOriginal ? formatDate(tags.DateTimeOriginal) : "Information Unavailable";
 
-    // Display the classification and metadatat
+    // Display the classification and metadata
     resultDiv.innerHTML = `
         <h2>Upload Result</h2>
         <p><strong>Classification:</strong> ${result.classification}</p>
