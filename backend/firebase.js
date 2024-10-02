@@ -1,5 +1,5 @@
 const admin = require('firebase-admin');
-const serviceAccount = require('./imageguard-b77a9-firebase-adminsdk-f012h-8d36f8b7a1.json');
+const serviceAccount = require('./imageguard-b77a9-firebase-adminsdk-f012h-8523a8c5d5.json');
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
