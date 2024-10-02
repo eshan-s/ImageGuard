@@ -1,8 +1,32 @@
-# Node modules
+# Node.js
 node_modules/
+package-lock.json
 
-# Firebase service account files
-*.json
+# Firebase service account key files
+backend/*.json
 
 # Uploads directory
 uploads/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node modules
+/backend/node_modules
+
+# Firebase service account key
+/backend/imageguard-b77a9-firebase-adminsdk-f012h-8523a8c5d5.json
+/backend/serviceAccountKey.json
+
+# Uploads directory
+/uploads
+
+# macOS specific files
+.DS_Store
