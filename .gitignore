@@ -21,6 +21,10 @@ Thumbs.db
 # Node modules
 /backend/node_modules/
 
+# Firebase service account key files
+/backend/imageguard-b77a9-firebase-adminsdk-f012h-8523a8c5d5.json
+/backend/serviceAccountKey.json
+
 # Uploads directory
 /uploads
 
