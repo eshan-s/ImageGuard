@@ -7,12 +7,7 @@ The application is designed with a focus on performance, ease of use, and securi
 ## Table of Contents
 - [Features](#features)
 - [Technologies](#technologies)
-- [Installation](#installation)
-- [Usage](#usage)
-- [CORS Configuration](#cors-configuration)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 - Secure image upload using Firebase Storage.
@@ -29,4 +24,3 @@ The application is designed with a focus on performance, ease of use, and securi
   - `multer`
   - `cors`
 
-## Installation
